@@ -12,19 +12,12 @@
 
 #include <stdio.h>
 
-void	ft_swap(int **a, int **b)
+void	ft_swap(int *a, int *b)
 {
 	int		temp;
 
-	temp = **a;
-	**a = **b;
-	**b = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
-int main(){
-
-	int arr[10];
-	int *p1 = &a;
-int *p2 = &b;
-printf("%lu", sizeof(arr) / sizeof(arr[0]));
-}
