@@ -77,7 +77,7 @@ char	**ft_split(char *str, char *charset)
 	{
 		while (str[k] && is_charset(charset, str[k]))
 			k++;
-		matrix[i] = malloc((word_len(&str[k], charset) + 1) * sizeof(char *);
+		matrix[i] = malloc(word_len(&str[k], charset) + 1);
 		j = 0;
 		while (str[k] && !is_charset(charset, str[k]))
 			matrix[i][j++] = str[k++];
